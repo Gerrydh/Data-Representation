@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <title> View Cars</title>
+    
+    </head>
+
+    <body>
+        <h1>Cars</h1>
+        <form action="table.html" method="GET">
+            <button>Create</button>
+            
+        </form>
+        
+        <div class="container">
+       
+                <table class="table">
+                        <h1>All Cars</h1>
+                        <tr>
+                            <th>Reg</th>
+                            <th>Make</th>
+                            <th>Model</th>
+                            <th>Price</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tr>
+                            <td>191 MO 123</td>
+                            <td>Ford</td>
+                            <td>Mondeo</td>
+                            <td>25,000</td>
+                            <td><button>Update</button></td>
+                            <td><button>Delete</button></td>
+                           
+                        </tr>
+                        <tr>
+                            <td>12 D 123</td>
+                            <td>Fiat</td>
+                            <td>Punto</td>
+                            <td>4,000</td>
+                            <td><button>Update</button></td>
+                            <td><button>Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>08 G 123</td>
+                            <td>Nissan</td>
+                            <td>Almera</td>
+                            <td>500</td>
+                            <td><button>Update</button></td>
+                            <td><button>Delete</button></td>
+                        </tr>
+                    </table>
+                    </html>
+        </div>
+        <div>
+        <h2><span>Create A</span> <span>Update this</span> Car</h2>
+            Reg <input type="text" name="Reg"><br/>
+            Make <select name="Make">
+                    <option value="Ford">Ford</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Nissan">Nissan</option>
+            </select><br/> 
+
+            Model <input type="text" name="Model"<br/>
+            Price <input type="number" name="Price"><br/>
+            <span><button>Create</button></span>
+            <span><button>Update</button></span>
+        </div>
+
+
+    </body>
+</html>
