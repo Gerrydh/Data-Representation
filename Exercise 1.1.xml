@@ -1,20 +1,26 @@
+# Exercise 1.1 xml. library data. Gerard Hanlon X00364757
+# https://www.w3schools.com/xml/xml_elements.asp
+
 <?xml version="1.0" encoding="UTF-8"?>
-<Library>
-   <Technical Books>
-      <Title1>Technical Analysis For Dummies</Title1>
-	  <Author1>Barbara Rockefeller</Author1>
-	  <ISBN1>978-1-118-77961-3</ISBN1>
-      <Title2>Python for Data Analysis</Title2>
-	  <Author2>Wes McKinney</Author2>
-	  <ISBN2>978-1-491-95766-0</ISBN2>
-	  
-	</Technical Books>
-	<Cookery Books>
-	   <Title3>All Things Sweet</Title3>
-	   <Author3>Rachel Allen</Author3>
-	   <ISBN3>978-0-00746-2407</ISBN3>>
-       <Title4>Python for Data Analysis</Title4>
-	   <Author4>Wes McKinney</Author4>
-	   <ISBN4>978-1-491-95766-0</ISBN4>
-	</Cookery Books>
-</Library>
+<library>
+  <book category="Techincal">
+    <title>Technical Analysis For Dummies</title>
+    <author>Barbara Rockefeller</author>
+    <ISBN>978-1-118-77961-3</ISBN>
+  </book>
+  <book category="Techincal">
+    <title>Python for Data Analysis</title>
+    <author>Wes McKinney</author>
+    <ISBN>978-1-491-95766-0</ISBN>
+  </book>
+  <book category="Cookery">
+    <title>All Things Sweet</title>
+    <author>Rachel Allen</author>
+    <ISBN>978-0-00746-2407</ISBN>
+  </book>
+  <book category="Cookery">
+    <title>The Hairy Bikers' British Classics</title>
+    <author>Si King and Dave Myers</author>
+    <ISBN>978-1-4091715-9</ISBN>
+  </book>
+</library> 
