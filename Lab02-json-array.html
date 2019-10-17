@@ -1,0 +1,22 @@
+<html>
+<body>
+        <button onclick="readJSON()">GO</button>
+<p id="demo"></p>
+
+<script>
+function readJSON(){
+var myObj, i, x = "";
+myObj = {
+  "firstName":["John", "Anna", "Peter"],
+  "lastName":["Doe", "Smith", "Jones"]
+}
+
+for (i = 0; i < myObj.firstName.length; i++) {
+  x += myObj.firstName[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html> 
+    <body> 
+    
+    <button onclick="readJSON()">Return Details</button>
+    <p id="demo"></p> 
+      
+    <script> 
+    function readJSON(){
+    var txt ='{"isbn":"1234567","author":"Andrew Beatty","title":"the emptymess of ping-pong balls" }'; 
+       
+    var obj = JSON.parse(txt); 
+      
+    document.getElementById("demo").innerHTML = obj.author; 
+    }
+    </script> 
+    </body> 
+</html>
