@@ -1,0 +1,31 @@
+<html>
+    <head><title>Test Create</title></head>
+    <script>src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"</script>
+    <body>
+        Hi, There
+        <button onclick="getall()">Go</button>
+
+        <script>
+        function createCar(){
+                    var car = {"reg":"12 D 4321", "make":"Fiat", "model":"Punto", "price": 3500}
+                    console.log(JSON.stringify(car));
+            $.ajax({
+                url: "cars",
+                method: "POST",
+                data:JSON.stringify(car),
+                dataType:"JSON",
+                contentType: "application/json; charset=utf-8",
+                success: function(result){
+                console.log(result);
+                document.getElementById("output").innerText = JSON.stringify(result);
+                },
+                error: function(xhr,status, error){
+                    console.log("error "+status+" msg:"+error);
+                }
+            });
+        }
+
+        </script>
+    </body>
+
+</html>
